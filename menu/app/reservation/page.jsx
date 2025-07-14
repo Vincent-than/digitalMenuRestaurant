@@ -3,12 +3,16 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
+// This page allows users to make a reservation.
+// It includes a form for name, email, date, time, and number of guests, and handles submission.
+
 export default function ReservationPage() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    // Prevent default form submission behavior
+    // Collect form data
     const formData = {
       name: e.target[0].value,
       email: e.target[1].value,
