@@ -44,6 +44,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-green-100 text-black px-4 py-8 sm:px-6 sm:py-12 font-sans">
       <header className="relative mb-10">
         <nav className="absolute top-4 right-4 flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm uppercase">
+          <a href="/files/Menu.pdf" className="text-blue-900 font-semibold hover:underline">Menu </a>
           <Link href="/reservation" className="text-red-800 font-semibold hover:underline">Reservations</Link>
           <Link href="/contact" className="text-red-800 font-semibold hover:underline">Contact</Link>
         </nav>
